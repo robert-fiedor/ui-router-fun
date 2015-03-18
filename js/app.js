@@ -1,5 +1,4 @@
-
-angular.module('app',['ui.router'])
+angular.module('app', ['ui.router'])
 
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
@@ -10,21 +9,30 @@ angular.module('app',['ui.router'])
             .state('categories', {
                 url: '/',
                 views: {
-                    'categories': {
-                        //controller: 'CategoriesCtrl',
-                        templateUrl: 'partials/partial1.html'
+                    'elfs': {
+                        controller: 'ElfController',
+                        templateUrl: 'partials/elf.html'
                     },
                     'hobbits': {
-                        //controller: 'CategoriesCtrl',
+                        controller: 'HobbitController',
                         templateUrl: 'partials/hobbits.html'
                     }
                 }
             })
 
 
-
         $urlRouterProvider.otherwise('/');
     })
+
+    .controller('ElfController', function () {
+        console.log('ElfController init')
+    })
+    .controller('HobbitController', function () {
+        console.log('HobbitController init')
+    })
+
+
+
 
 
 
