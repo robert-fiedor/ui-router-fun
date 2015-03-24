@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+    <title>User Login and Sessions</title>
+
+</head>
+<body>
+
+
+<script>
+
+
+    function getCounter() {
+
+        var self = this;
+        self.init = 0;
+
+        function get() {
+            self.init++;
+            return self.init;
+        }
+
+        return {
+            getget: getget
+        }
+    }
+
+
+    //djdjdj
+
+    <!--var counter = new getCounter();-->
+    <!--var anotherCOunter = new getCounter();-->
+    <
+    !--//    console.log(counter.getget());-->
+    < !--//    console.log(counter.getget());-->
+    < !--//    console.log(anotherCOunter.getget());-->
+    < !--//    console.log(counter.getget());-->
+    < !--//    console.log(anotherCOunter.getget());-->
+
+
+        <!--console.log(finUnique('bobek'))-->
+
+        <!--function finUnique(t) {-->
+
+        <!--var result= t.split('');-->
+
+
+        <!--for (var i = 0; i < result.length; i++) {-->
+
+        <!--var current = result[0];-->
+
+    < !--//            /var substring = t.substr(5);-->
+
+
+        <!--if (result[i] == current ) {-->
+
+        <!--console.log('found repeat')-->
+
+        <!--result.splice()-->
+
+    < !--//                console.log('tyty',tyty)-->
+        <!--console.log('result',result)-->
+
+        <!--}-->
+
+        <!--}-->
+
+        <!--console.log('ej2', t.slice(-1));-->
+
+        <!--return result;-->
+
+        <!--}-->
+        <!--;-->
+
+
+    < !--</script>
+-->
+
+
+<script>
+
+    //        // define a function
+    //        var sayHi = function (who) {
+    //            return "Hello" + who + "!";
+    //        };
+    //        // invoke a function
+    //        console.log(sayHi()); // "Hello"
+    //
+    //        sayHi('world'); // "Hello, world!"
+    //        // apply a function
+    //        sayHi.apply(null, ["hello"]); // "Hello, hello!"
+    //
+    //
+    //
+    //
+
+
+    //    var liker = function (type) {
+    //        return function (name) {
+    //            var result = 'I like this ' + type + ': ' + name;
+    //            console.log(result)
+    //            return result;
+    //        };
+    //    };
+
+    //    var bookLiker = liker('book');
+    //    bookLiker('Oro');  // I like this book: Oro
+    //    bookLiker('Wild: A journey from lost to found'); // I like this book: Wild: A journey from lost to found
+    //
+    //    var tedLiker = liker('TED talk');
+    //    tedLiker('The art of misdirection'); // I like this TED talk: The art of misdirection
+    //
+    //
+    //    var getCounter = function(){
+    //        var init = 1;
+    //        return function(name){
+    //            return init++;
+    //        }
+    //    };
+    //
+    //    var counter = getCounter();
+    //    console.log('counter',counter());
+    //    console.log('counter',counter());
+    //
+    //    var anotherCounter = getCounter();
+    //    console.log('anotherCounter',anotherCounter());
+    //    console.log('counter',counter());
+    //    console.log('anotherCounter',anotherCounter());
+    //    console.log('anotherCounter',anotherCounter());
+
+
+    //    var counter = getCounter();
+    //    var another = getCounter();
+    //    counter(); // logs 1
+    //    counter(); // logs 2
+    //    another(); // logs 1
+    //    counter(); // logs 3
+
+
+    //    function add(x, y) {
+    //        console.log('add called')
+    //        console.log(x + y);
+    //    }
+    //
+    //    function subtract(x, y) {
+    //        console.log('substract called')
+    //        console.log(x - y);
+    //    }
+    //
+    //
+    //
+    //    console.log('--',subtract.call(add, 4, 1));
+
+    //http://www.endmemo.com/program/js/call.php
+
+    //    function class1() {
+    //        this.a = 7;
+    //        this.foo = function () {
+    //            console.log(this.a * 10);
+    //        }
+    //    }
+    //    function class2() {
+    //        this.a = 9;
+    //    }
+    //
+    //    var c1 = new class1();
+    //
+    //    var c2 = new class2();
+    //
+    //    c1.foo.call(c2);
+
+
+    //************************************************************
+
+    //    function Class1() {
+    //        this.a = 7;
+    //        this.foo = function (b) {
+    //            console.log(this.a * b - 8);
+    //        }
+    //    }
+    //
+    //    var c1 = new Class1();
+    //
+    //    c1.a=999;
+    //
+    //    console.log('c1',c1);
+    //
+    //
+    //    function Class2() {
+    //        Class1.apply(this,arguments);
+    //    }
+    //
+    //    var c2 = new Class2();
+    //    c2.foo(2);
+    //
+    //    console.log('c2',c2)
+
+
+    //************************************************************
+
+    //    3a. Strings
+    //    Write a function that accepts a string and returns the first character that is unique /
+    // only appears once in that string
+
+
+    //4. Elements to Object
+    //    Write JavaScript that transforms an HTML structure into a Javascript Object. Assume that we are only interested in capturing the DIV’s with id attributes.
+    //
+    //            For example:
+    //    <div id="first_div"></div>
+    //    <div id="second_div"></div>
+    //    <div id="third_div"></div>
+    //
+    //    becomes
+    //
+    //    {
+    //        first_div: [Element],
+    //                second_div: [Element],
+    //            third_div: [Element],
+    //    }
+
+
+    //    var findDiv = function(){
+    //
+    //
+    //
+    //    };
+    //
+    //    console.log()
+    //
+    //    var a = '<div id="first_div"></div> <div id="second_div"></div><div id="third_div"></div>'
+    //
+    //
+    //    var splitto = a.split('</div>');
+    //    var result ={};
+    //
+    //    splitto.forEach(function(t,i){
+    //
+    //        var start = t.indexOf('"');
+    //
+    //        var temp = t.slice(start+1);
+    //
+    //        var finalkey = temp.replace('">','')
+    //
+    //        console.log(finalkey)
+    //
+    //        result[finalkey]=['Element'];
+    //
+    //
+    //
+    //    })
+    //
+    //
+    //
+    //    console.log('result',result);
+
+
+    //    recurr() any/more/<evenmore>evenElse/<evenMore><evenMore2>evenMore3/<evenevenHereYoo>bob/
+
+    //    var obj = {
+    //
+    //        any: {
+    //            more: {
+    //                evenmore: ""
+    //            }
+    //        },
+    //        evenElse: {
+    //            evenMore: "",
+    //            evenMore2: "",
+    //            evenMore3: {
+    //                evenevenHereYoo: ""
+    //            }
+    //        },
+    //        bob:{}
+    //    };
+    //
+    //    var result='';
+    //
+    //
+    //    var recurr = function(target){
+    //
+    //        for (var current in target){
+    //
+    //            if(typeof target[current] === 'object') {
+    //                result += current;
+    //                result += '/';
+    //                recurr(target[current]);
+    //            } else {
+    //
+    //                result+='<'
+    //                result += current;
+    //                result+='>'
+    //            }
+    //
+    //        }
+    //
+    //        return result;
+    //
+    //    };
+    //
+    //    console.log('recurr()',recurr(obj))
+
+
+</script>
+
+
+</body>
+</html>
+
